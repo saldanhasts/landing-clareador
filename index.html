@@ -23,102 +23,116 @@
         background-color: var(--bg);
         color: var(--text);
         line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
 
       header {
         background-color: #fff;
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 1.5rem;
         text-align: center;
         border-bottom: 1px solid #eee;
       }
 
       header h1 {
         font-size: 2rem;
-        color: var(--accent);
+        color: #d7a36b;
         margin-bottom: 0.5rem;
+        line-height: 1.2;
       }
 
       header p {
         color: var(--light);
         font-size: 1.1rem;
+        max-width: 320px;
+        margin: 0 auto;
       }
 
       .header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #333;
-}
+      .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #333;
+        flex-shrink: 0;
+      }
 
-.logo img {
-  height: 32px;
-  margin-right: 10px;
-}
+      .logo img {
+        height: 32px;
+        margin-right: 10px;
+      }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
+      .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-.nav a {
-  text-decoration: none;
-  color: #444;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
+      .nav a {
+        text-decoration: none;
+        color: #444;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        padding: 0.3rem 0.5rem;
+      }
 
-.nav a:hover {
-  color: #009688;
-}
+      .nav a:hover {
+        color: #d7a36b;
+      }
 
-.btn-comprar {
-  background-color: #009688;
-  color: white !important;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: 600;
-}
+      .btn-comprar {
+        background-color: #d7a36b;
+        color: white !important;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-comprar:hover {
+        background-color: #d7a36b;
+      }
 
       .hero {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 3rem;
         text-align: center;
+        max-width: 400px;
+        max-height: 440px;
+        margin: 0 auto 40px;
       }
 
       .hero img {
         max-width: 100%;
         border-radius: 8px;
-        margin-bottom: 1rem;
-      }
-
-      .hero {
-        max-width: 400px;
-        max-height: 440px;
-        margin: 0 auto;
+        margin-bottom: 1.2rem;
+        opacity: 0.9;
       }
 
       .cta-btn {
-        background-color: var(--accent);
+        background-color: #d7a36b;
         color: white;
         border: none;
         padding: 1rem 2rem;
@@ -127,6 +141,10 @@
         cursor: pointer;
         text-decoration: none;
         transition: background 0.3s;
+        display: inline-block;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-break: break-word;
       }
 
       .cta-btn:hover {
@@ -143,6 +161,7 @@
       .faq {
         display: grid;
         gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .benefit {
@@ -150,6 +169,12 @@
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .benefit h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        color: var(--accent);
       }
 
       .testimonial {
@@ -160,20 +185,22 @@
         flex-direction: row;
         align-items: center;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+        margin-bottom: 1.5rem;
       }
 
       .testimonial img {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 8px;
-        margin-bottom: 0.5rem;
-      }
-
-      .testimonial img {
-        border-radius: 122%;
+        border-radius: 50%;
         height: 194px;
         width: 190px;
         margin-right: 20px;
+        object-fit: cover;
+        opacity: 0.9;
+      }
+
+      .testimonial p {
+        font-size: 1rem;
+        line-height: 1.4;
+        color: var(--text);
       }
 
       footer {
@@ -183,35 +210,168 @@
         padding: 2rem 1rem;
       }
 
-      @media (min-width: 768px) {
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333;
+      }
+
+      /* RESPONSIVIDADE */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: flex-start; /* centraliza horizontalmente */
+          gap: 1.5rem; /* espaçamento maior */
+          padding-bottom: 15px;
+        }S
+
+        .nav ul {
+          flex-direction: column;
+          gap: 1.2rem; /* mais espaço vertical entre os links */
+          width: 100%;
+          padding-left: 0;
+          align-items: center; /* centraliza os itens da lista */
+        }
+
+        .nav li {
+          width: 100%;
+          max-width: 320px; /* limita largura para evitar menu esticado demais */
+        }
+
+        .nav a,
+        .btn-comprar {
+          font-size: 1.2rem;
+          width: 100%;
+          text-align: center;
+          padding: 1rem 0;
+          display: inline-block;
+          border-radius: 8px;
+          box-sizing: border-box;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+          color: #d7a36b; /* uma cor suave para hover */
+        }
+
+        .btn-comprar {
+          background-color: #d7a36b;
+          color: white !important;
+          padding: 1rem 0;
+          border-radius: 8px;
+          font-weight: 600;
+        }
+
+        .btn-comprar:hover {
+          background-color: #d7a36b;
+        }
+
+        .header h1,
+        header p {
+          font-size: 1.5rem;
+          max-width: 100%;
+          margin-top: 40px;
+          padding: 0 5px;
+        }
+
         .benefits,
         .faq {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 1fr;
+          margin-top: 30px;
+        }
+
+        .testimonial {
+          flex-direction: column;
+          text-align: center;
+          padding: 1rem 0.5rem;
+        }
+
+        .testimonial img {
+          margin: 0 0 1rem 0;
+          height: 150px;
+          width: 150px;
+        }
+
+        section {
+          padding: 3rem 1rem;
+        }
+
+        .hero {
+          max-width: 100%;
+          padding: 1.5rem 1rem 3rem;
+        }
+
+        .cta-btn {
+          padding: 1rem;
+          font-size: 1.1rem;
+          max-width: 100%;
+        }
+
+        .menu-toggle {
+          display: block;
+          position: absolute;
+          right: 15px;
+          top: 8px;
+          z-index: 1100;
+        }
+
+        .nav {
+          display: none;
+          width: 100%;
+        }
+
+        .nav.active {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          animation: slideDown 0.3s ease forwards;
+        }
+
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10%);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
       }
     </style>
   </head>
   <body>
     <header class="header">
-            <div class="container">
-              <div class="logo">
-                <span>Clareador de Manchas 100% Natural</span>
-              </div>
-              <nav class="nav">
-                <ul>
-                  <li><a href="#beneficios">Benefícios</a></li>
-                  <li><a href="#antes-depois">Antes e Depois</a></li>
-                  <li><a href="#depoimentos">Depoimentos</a></li>
-                  <li><a href="https://entrega.logzz.com.br/pay/memdqgl6x/1-frasco-principal" class="btn-comprar" target="_blank">Comprar</a></li>
-                </ul>
-              </nav>
-            </div>
-          
+      <div class="container">
+        <div class="logo">
+          <span>Clareador de Manchas 100% Natural</span>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <nav class="nav">
+          <ul>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#antes-depois">Antes e Depois</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li>
+              <a
+                href="https://entrega.logzz.com.br/pay/memdqgl6x/1-frasco-principal"
+                class="btn-comprar"
+                target="_blank"
+                >Comprar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <h1>Diga adeus às manchas!</h1>
       <p>Um clareador natural e eficaz para rosto, axilas e pernas</p>
     </header>
 
-    <div class="hero">
+    <div id="antes-depois" class="hero">
       <img src="\img\antes-depois.png" alt="Antes e Depois Clareador" />
       <a
         class="cta-btn"
@@ -221,7 +381,7 @@
       >
     </div>
 
-    <section class="benefits">
+    <section id="beneficios" class="benefits">
       <div class="benefit">
         <h3>Reduz manchas de acne e melasma</h3>
         <p>
@@ -242,14 +402,14 @@
       </div>
     </section>
 
-    <section>
+    <section id="depoimentos">
       <h2 style="text-align: center; margin-bottom: 1rem">Depoimentos Reais</h2>
       <div class="testimonial">
         <img src="\img\juliana-antes-depois.png" alt="Antes e Depois 1" />
         <p>
           <strong>Juliana, 29 anos:</strong> “Minhas manchas de acne
           praticamente sumiram em 3 semanas. Após ver alguns resultados decidi
-          comprar, e não me arrependo. Já adiquiri mais uma unidade do produto
+          comprar, e não me arrependo. Já adquiri mais uma unidade do produto
           para minha irmã e estou aguardando chegar, devido a gravidez ela está
           com as axilas e algumas partes do corpo com um tom mais escuro,
           acredito que rapidinho irá clarear. Ninguém merece manchas no corpo,
@@ -261,9 +421,9 @@
         <p>
           <strong>Patrícia, 35 anos:</strong> “Nunca imaginei que fosse
           recuperar minha autoestima tão rápido. No início fiquei um pouco com
-          receio se deveria de fato testar, após usar o clareador pude perceber
-          que foi a escolha certa a se fazer! Achei o método de pagamento
-          seguro, já que só pago na entrega do produto...”
+          receio se deveria testar, após usar o clareador pude perceber que foi
+          a escolha certa a se fazer! Achei o método de pagamento seguro, já que
+          só pago na entrega do produto...”
         </p>
       </div>
     </section>
@@ -298,4 +458,13 @@
 
     <footer>Página informativa. Todos os direitos reservados.</footer>
   </body>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
 </html>
