@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clareador de Manchas</title>
+    <style>
+      :root {
+        --bg: #fafafa;
+        --accent: #dbc1ac;
+        --text: #333;
+        --light: #777;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        color: var(--accent);
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        color: var(--light);
+        font-size: 1.1rem;
+      }
+
+      .header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.logo img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #009688;
+}
+
+.btn-comprar {
+  background-color: #009688;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+      .hero {
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .hero img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .hero {
+        max-width: 400px;
+        max-height: 440px;
+        margin: 0 auto;
+      }
+
+      .cta-btn {
+        background-color: var(--accent);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .cta-btn:hover {
+        background-color: #b89e88;
+      }
+
+      section {
+        padding: 2rem 1rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .benefits,
+      .faq {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .benefit {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .testimonial {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .testimonial img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+      }
+
+      .testimonial img {
+        border-radius: 122%;
+        height: 194px;
+        width: 190px;
+        margin-right: 20px;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #aaa;
+        padding: 2rem 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .benefits,
+        .faq {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+            <div class="container">
+              <div class="logo">
+                <span>Clareador de Manchas 100% Natural</span>
+              </div>
+              <nav class="nav">
+                <ul>
+                  <li><a href="#beneficios">Benefícios</a></li>
+                  <li><a href="#antes-depois">Antes e Depois</a></li>
+                  <li><a href="#depoimentos">Depoimentos</a></li>
+                  <li><a href="https://entrega.logzz.com.br/pay/memdqgl6x/1-frasco-principal" class="btn-comprar" target="_blank">Comprar</a></li>
+                </ul>
+              </nav>
+            </div>
+          
+      <h1>Diga adeus às manchas!</h1>
+      <p>Um clareador natural e eficaz para rosto, axilas e pernas</p>
+    </header>
+
+    <div class="hero">
+      <img src="\img\antes-depois.png" alt="Antes e Depois Clareador" />
+      <a
+        class="cta-btn"
+        href="https://entrega.logzz.com.br/pay/memdqgl6x/1-frasco-principal"
+        target="_blank"
+        >Quero minha pele renovada</a
+      >
+    </div>
+
+    <section class="benefits">
+      <div class="benefit">
+        <h3>Reduz manchas de acne e melasma</h3>
+        <p>
+          Com fórmula natural, age diretamente nas manchas sem agredir a pele.
+        </p>
+      </div>
+      <div class="benefit">
+        <h3>Uniformiza o tom da pele</h3>
+        <p>Melhora a textura da pele e promove um tom mais claro e uniforme.</p>
+      </div>
+      <div class="benefit">
+        <h3>Resultados visíveis em poucas semanas</h3>
+        <p>Relatos mostram melhora em até 15 dias com uso contínuo.</p>
+      </div>
+      <div class="benefit">
+        <h3>Seguro para o rosto e o corpo</h3>
+        <p>Ideal para manchas no rosto, axilas e região interna das coxas.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="text-align: center; margin-bottom: 1rem">Depoimentos Reais</h2>
+      <div class="testimonial">
+        <img src="\img\juliana-antes-depois.png" alt="Antes e Depois 1" />
+        <p>
+          <strong>Juliana, 29 anos:</strong> “Minhas manchas de acne
+          praticamente sumiram em 3 semanas. Após ver alguns resultados decidi
+          comprar, e não me arrependo. Já adiquiri mais uma unidade do produto
+          para minha irmã e estou aguardando chegar, devido a gravidez ela está
+          com as axilas e algumas partes do corpo com um tom mais escuro,
+          acredito que rapidinho irá clarear. Ninguém merece manchas no corpo,
+          isso acaba com a autoestima da mulher principalmente!”
+        </p>
+      </div>
+      <div class="testimonial">
+        <img src="\img\patricia-antes-depois.png" alt="Antes e Depois 2" />
+        <p>
+          <strong>Patrícia, 35 anos:</strong> “Nunca imaginei que fosse
+          recuperar minha autoestima tão rápido. No início fiquei um pouco com
+          receio se deveria de fato testar, após usar o clareador pude perceber
+          que foi a escolha certa a se fazer! Achei o método de pagamento
+          seguro, já que só pago na entrega do produto...”
+        </p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="benefit">
+        <h3>É seguro para todos os tipos de pele?</h3>
+        <p>Sim! A fórmula é dermatologicamente testada.</p>
+      </div>
+      <div class="benefit">
+        <h3>Quanto tempo demora para ver resultados?</h3>
+        <p>A maioria dos usuários nota diferença em até 15 dias.</p>
+      </div>
+      <div class="benefit">
+        <h3>Posso usar no rosto e no corpo?</h3>
+        <p>Sim! É indicado para axilas, virilhas e rosto.</p>
+      </div>
+      <div class="benefit">
+        <h3>É necessário pagar antes?</h3>
+        <p>Não! Você só paga quando o produto chega na sua casa.</p>
+      </div>
+    </section>
+
+    <div class="hero">
+      <a
+        class="cta-btn"
+        href="https://entrega.logzz.com.br/pay/memdqgl6x/1-frasco-principal"
+        target="_blank"
+        >Comprar agora com segurança</a
+      >
+    </div>
+
+    <footer>Página informativa. Todos os direitos reservados.</footer>
+  </body>
+</html>
